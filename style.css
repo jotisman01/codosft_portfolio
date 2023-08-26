@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Tektur:wght@600&display=swap&family=Audiowide');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: rgb(83 229 239);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    position: sticky;
+    top: 0%;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'tektur',sans-serif;
+    color: #000110;
+}
+ul a{
+    margin: 16px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #010339;
+}
+ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+.leftnav{
+    font-weight: 800 ;
+    font-size: 2rem;
+    font-family: 'Audiowide',sans-serif;
+    box-shadow: 2px 2px 6px 6px white;
+    border-radius: 30px;
+    padding: 8px;
+    color: #010339;
+}
+#home{
+    display: flex;
+    background-image: linear-gradient(to right,rgb(224, 234, 233),rgb(27, 98, 98));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    height: 900px;
+}
+.left p{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Ubuntu',sans-serif;
+    color: black;
+    padding: 30px;
+    margin: 25px;
+    font-weight: 300;
+    width: 80%;
+    font-size: 600;
+}
+.left{
+    width: 100%;
+    color:black;
+    height: 600px; 
+    padding: 15px;  
+}
+.left h3{
+    color:transparent;
+    background-image: linear-gradient(#0ccbb8,#011e2a);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1130px 0;
+    animation: Text 6s linear infinite;
+    font-family:'Michroma',sans-serif;
+    font-weight: 1100;
+    font-size: 2rem;
+}
+@keyframes Text{
+    0%,35%,100% {
+        background-position: -1130px 0;
+    }
+    65%,90% {
+        background-position: 0 0;
+    }
+}
+h1{
+    font-size: 3rem;
+    background:linear-gradient( to top,rgb(3, 14, 18), rgba(17, 125, 137, 0.97));
+    margin: 30px 0;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.btn{
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 180px;
+    height: 50px;
+    font-size:20px;
+    font-family: 'Audiowide',sans-serif;
+    border-radius: 40px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: rgb(248, 4, 4);
+}
+.btn::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    background: #0ccbb8;
+    transition: 0.4s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.lg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin: 8px;
+    color: rgb(38, 0, 255);
+}
+.right img{
+    border: 15px solid rgb(83, 229, 239);
+    border-radius: 400px;
+    outline: 2px solid black;
+}
+#contact{
+    background-image: linear-gradient(to right,rgb(224, 234, 233),rgb(27, 98, 98));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(3, 16, 249);
+    font-family: 'Audiowide',sans-serif;
+    height: 900px;
+}
+#contact h2{
+    font-size: 60px;
+    padding: 20px;
+}
+#text{
+    background:transparent;
+    border: 3px solid rgb(4, 45, 56);
+    padding: 8px;
+    margin: 12px;
+    width: 450px;
+    border-radius: 10px;
+    font-size: 23px;
+    color: rgb(1, 3, 17);
+    padding: 10px 15px;
+}
+#text::placeholder{
+    color: blue;
+    font-family: 'Michroma',sans-serif;
+}
+.btnsm{
+    background: transparent;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    padding: 7px 20px;
+    font-size: 25px;
+    color: white;
+    border: 3px solid black;
+    cursor: pointer;
+    overflow: hidden;
+}
+.btnsm::before{
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    background: rgb(0, 255, 204);
+    top: 0;
+    width: 0;
+    height: 100%;
+    right: 0;
+    transition: 0.4s;
+}
+.btnsm:hover::before{
+    width: 100%;
+}
